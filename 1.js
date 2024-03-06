@@ -7,4 +7,9 @@
 который получаем от функции, в консоль.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const enteredNumber = +prompt("Введите число:");
+console.log(cubeANumber(enteredNumber));
+
+function cubeANumber(number) {
+  return number ** 3;
+}

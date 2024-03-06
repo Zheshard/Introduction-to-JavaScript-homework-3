@@ -8,5 +8,18 @@
 число. Функция должна вычесть из переданного ей числа 13% и вывести в консоль 
 сообщение "Размер заработной платы за вычетом налогов равен N."
 */
+const enteredNumber = +prompt("Введите число: ");
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+if (Number.isFinite(enteredNumber)) {
+  console.log("Значение задано неверно");
+} else {
+  calculateSalaryMinusTax(enteredNumber);
+}
+
+function calculateSalaryMinusTax(salary) {
+  console.log(
+    `Размер заработной платы за вычетом налогов равен ${
+      salary - salary * 0.13
+    }.`
+  );
+}

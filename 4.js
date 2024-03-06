@@ -17,5 +17,28 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 не нужно.
 Демонстрировать работы функций не обязательно.
 */
+const num1 = +prompt("Введите число 1:");
+const num2 = +prompt("Введите число 2:");
+console.log(`Результат сложения: ${sum(num1, num2)}`);
+console.log(`Результат вычитания: ${diff(num1, num2)}`);
+console.log(`Результат умножения: ${mult(num1, num2)}`);
+console.log(`Результат деления: ${div(num1, num2)}`);
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+function sum(num1, num2) {
+  return num1 + num2;
+}
+
+function diff(num1, num2) {
+  if (num1 >= num2) {
+    return num1 - num2;
+  }
+  return num2 - num1;
+}
+
+function mult(num1, num2) {
+  return num1 * num2;
+}
+
+function div(num1, num2) {
+  return num1 / num2;
+}
