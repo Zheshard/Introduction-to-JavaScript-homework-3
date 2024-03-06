@@ -19,13 +19,14 @@ const number3 = +prompt("Ввдите третье число:");
 findTheMaxOfThreeNumbers(number1, number2, number3);
 
 function findTheMaxOfThreeNumbers(num1, num2, num3) {
-  let max = num1;
-  if (max < num2) {
-    max = num2;
-  }
-  if (max < num3) {
-    max = num3;
-  }
+  // let max = num1;
+  // if (max < num2) {
+  //   max = num2;
+  // }
+  // if (max < num3) {
+  //   max = num3;
+  // }
+  const max = Math.max(num1, num2, num3);
   console.log(
     `Максимальное значение среди чисел ${num1}, ${num2}, ${num3} равно ${max}.`
   );

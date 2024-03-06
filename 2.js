@@ -10,7 +10,7 @@
 */
 const enteredNumber = +prompt("Введите число: ");
 
-if (Number.isNaN(enteredNumber)) {
+if (Number.isFinite(enteredNumber)) {
   console.log("Значение задано неверно");
 } else {
   calculateSalaryMinusTax(enteredNumber);
